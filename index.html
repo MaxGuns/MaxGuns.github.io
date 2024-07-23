@@ -73,10 +73,21 @@
             <button onclick="enterGallery()">Masuk</button>
         </div>
     </div>
+    
+    <!-- Audio Element -->
+    <audio id="background-music" src="7045568708420406043.mp3" autoplay loop></audio>
+    
     <script>
         function enterGallery() {
             window.location.href = 'main.html';
         }
+        
+        // Optional: Control the audio with JavaScript
+        const audio = document.getElementById('background-music');
+        // Example: Adjust volume
+        audio.volume = 0.5; // Set volume between 0.0 and 1.0
+        // Example: Pause the music
+        // audio.pause();
     </script>
 </body>
 </html>
