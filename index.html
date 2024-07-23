@@ -64,6 +64,11 @@
                 height: 95vmin; /* Tinggi latar belakang pada perangkat yang lebih kecil */
             }
         }
+
+        /* CSS untuk menyembunyikan elemen audio */
+        #background-music {
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -74,8 +79,8 @@
         </div>
     </div>
     
-    <!-- Audio Element with Controls -->
-    <audio id="background-music" src="7045568708420406043.mp3" controls autoplay loop></audio>
+    <!-- Audio Element without Controls -->
+    <audio id="background-music" src="path-to-your-music-file.mp3" autoplay loop></audio>
     
     <script>
         function enterGallery() {
@@ -85,15 +90,6 @@
         // Optional: Control the audio with JavaScript
         const audio = document.getElementById('background-music');
         audio.volume = 0.5; // Set volume between 0.0 and 1.0
-        
-        // Example: Check if audio is loaded and can play
-        audio.addEventListener('canplaythrough', () => {
-            console.log('Audio is ready to play');
-        });
-
-        audio.addEventListener('error', (e) => {
-            console.error('Audio error:', e);
-        });
     </script>
 </body>
 </html>
