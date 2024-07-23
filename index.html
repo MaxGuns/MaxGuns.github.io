@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Gallery</title>
+    <title>Welcome to Photo Gallery</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <h1>Teknik Informatika</h1>
-    <div id="gallery">
-        <div class="photo-card">
-            <img src="IMG-20240716-WA0003.jpg" alt="Teknik Informatika">
-            <p>Satu Lokal</p>
-        </div>
+<body class="landing-page">
+    <div class="landing-content">
+        <h1>Selamat Datang di Teknik Informatika</h1>
+        <button onclick="enterGallery()">Masuk</button>
     </div>
-    <script src="kuntul.js"></script>
+    <script>
+        function enterGallery() {
+            window.location.href = 'main.html';
+        }
+    </script>
 </body>
 </html>
