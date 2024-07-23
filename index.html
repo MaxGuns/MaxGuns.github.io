@@ -26,6 +26,7 @@
             justify-content: center;
             align-items: center;
             overflow: hidden;
+            position: relative;
         }
 
         .landing-content {
@@ -47,6 +48,21 @@
 
         button:hover {
             background-color: #0056b3;
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            .background-container {
+                width: 90vmin; /* Lebar latar belakang pada perangkat mobile */
+                height: 90vmin; /* Tinggi latar belakang pada perangkat mobile */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .background-container {
+                width: 95vmin; /* Lebar latar belakang pada perangkat yang lebih kecil */
+                height: 95vmin; /* Tinggi latar belakang pada perangkat yang lebih kecil */
+            }
         }
     </style>
 </head>
