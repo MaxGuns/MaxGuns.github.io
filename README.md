@@ -1,4 +1,5 @@
 Prodi : Teknik Informatika 3A Pagi 
+
 Mahasiswa/i : 43
 Univa Lb 
 - Akmal Siregar
